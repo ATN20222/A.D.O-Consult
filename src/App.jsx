@@ -42,7 +42,7 @@ function App() {
             <Row className="text-center">
               <Col>
                 <p className="footer-text mb-0">
-                  © 2026 EngSolutions. All rights reserved. |
+                  © {new Date().getFullYear()} A.D.O CONSULT. All rights reserved. |
                   <a href="/contact" className="footer-link ms-2">
                     Contact Us
                   </a>
