@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Badge, Button, Carousel, Table } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
 import './ProjectDetails.css';
 
@@ -52,40 +51,53 @@ const ProjectDetails = () => {
 
   if (loading) {
     return (
-      <Container className="py-5 text-center">
-        <div className="spinner-border text-primary" role="status">
-          <span className="visually-hidden">Loading...</span>
+      <div className="project-details-page">
+        <div className="project-details-container">
+          <div className="project-details-loading">
+            <div className="project-details-spinner"></div>
+            <h3>Loading Project Details...</h3>
+            <p>Fetching project information</p>
+          </div>
         </div>
-        <p className="mt-3">Loading project details...</p>
-      </Container>
+      </div>
     );
   }
 
   if (error) {
     return (
-      <Container className="py-5 text-center">
-        <div className="alert alert-danger">
-          <h4>Error Loading Project</h4>
-          <p>{error}</p>
-          <Button onClick={() => navigate('/projects')} variant="primary">
-            Back to Projects
-          </Button>
+      <div className="project-details-page">
+        <div className="project-details-container">
+          <div className="project-details-error">
+            <div className="project-details-error-icon">
+              <i className="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3>Error Loading Project</h3>
+            <p>{error}</p>
+            <button className="project-details-back-btn" onClick={() => navigate('/projects')}>
+              Back to Projects
+            </button>
+          </div>
         </div>
-      </Container>
+      </div>
     );
   }
 
   if (!project) {
     return (
-      <Container className="py-5 text-center">
-        <div className="alert alert-warning">
-          <h4>Project Not Found</h4>
-          <p>The requested project could not be found.</p>
-          <Button onClick={() => navigate('/projects')} variant="primary">
-            Back to Projects
-          </Button>
+      <div className="project-details-page">
+        <div className="project-details-container">
+          <div className="project-details-not-found">
+            <div className="project-details-not-found-icon">
+              <i className="fas fa-search"></i>
+            </div>
+            <h3>Project Not Found</h3>
+            <p>The requested project could not be found.</p>
+            <button className="project-details-back-btn" onClick={() => navigate('/projects')}>
+              Back to Projects
+            </button>
+          </div>
         </div>
-      </Container>
+      </div>
     );
   }
 
@@ -104,99 +116,92 @@ const ProjectDetails = () => {
   };
 
   return (
-    <Container className="py-5  page-margin">
-      <Row className="mb-4">
-        <Col>
-          <Button
-            variant="outline-primary"
-            onClick={() => navigate(-1)}
-            className="mb-3"
-          >
-            <i className="fas fa-arrow-left me-2"></i>Back
-          </Button>
-        </Col>
-      </Row>
+    <div className="project-details-page">
+      {/* Hero Section */}
+      <section className="project-details-hero" data-aos="fade">
+        <div className="project-details-hero-overlay">
+          <div className="project-details-hero-content">
+            <h1 className="project-details-hero-title" data-aos="fade-up" data-aos-delay="200">
+              {project.title}
+            </h1>
+            <p className="project-details-hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+              {project.category} Project
+            </p>
+            <div className="project-details-status" data-aos="fade-up" data-aos-delay="600">
+              <span className={`project-details-status-badge status-${project.status.toLowerCase().replace(' ', '-')}`}>
+                {project.status}
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* Project Title and Description */}
-      <Row className="mb-5">
-        <Col>
-          <div className="project-header">
-            <div className="d-flex justify-content-between align-items-start flex-wrap mb-4">
-              <div>
-                <h1 className="project-title-main">{project.title}</h1>
-                <Badge bg={getStatusVariant(project.status)} className="project-status-badge">
-                  {project.status}
-                </Badge>
+      {/* Project Content */}
+      <section className="project-details-content">
+        <div className="project-details-container">
+          {/* Back Button */}
+          <div className="project-details-back" data-aos="fade-down">
+            <button className="project-details-back-btn" onClick={() => navigate('/projects')}>
+              <i className="fas fa-arrow-left"></i>
+              Back to Projects
+            </button>
+          </div>
+
+          {/* Project Description */}
+          <div className="project-details-description" data-aos="fade-up">
+            <p>{project.description}</p>
+          </div>
+
+          {/* Project Details */}
+          {project.table && (
+            <div className="project-details-info-section" data-aos="fade-up">
+              <div className="project-details-info-list">
+                {project.table.right.map((value, index) => (
+                  <div key={index} className="project-details-info-bullet">
+                    <span className="bullet-point">•</span>
+                    <span className="bullet-text">{value}</span>
+                  </div>
+                ))}
               </div>
             </div>
-            <p className="project-description-text">{project.description}</p>
-          </div>
-        </Col>
-      </Row>
+          )}
 
-      {/* Project Table */}
-      {project.table && (
-        <Row className="mb-5">
-          <Col>
-            <Card className="project-details-table-card">
-              <Card.Body>
-                <h2 className="table-title">Project Details</h2>
-                <div className="modern-table-container">
-                  <Table className="modern-table">
-                    <tbody>
-                      {project.table.left.map((label, index) => (
-                        <tr key={index}>
-                          <td className="table-label">{label}</td>
-                          <td className="table-value">{project.table.right[index]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </Table>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      )}
-
-      {/* Project Sections - Two Column Layout */}
-      {project.sections && project.sections.length > 0 && (
-        <Row className="mb-5">
-          <Col>
-            <h2 className="sections-title">Project Highlights</h2>
-            {project.sections.map((section, index) => (
-              <Card key={index} className="section-two-column-card">
-                <Card.Body>
-                  <Row className="align-items-center">
-                    <Col md={6} className="mb-3 mb-md-0">
-                      <div className="section-image-container">
-                        <img
-                          src={section.image}
-                          alt={section.title}
-                          className="section-image"
-                        />
-                      </div>
-                    </Col>
-                    <Col md={6}>
-                      <div className="section-content">
-                        <h3 className="section-card-title">{section.title}</h3>
-                        <p className="section-card-description">{section.description}</p>
-                        {section.country && (
-                          <Badge className="section-country-badge">
-                            <i className="fas fa-map-marker-alt me-1"></i>
-                            {section.country}
-                          </Badge>
-                        )}
-                      </div>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            ))}
-          </Col>
-        </Row>
-      )}
-    </Container>
+          {/* Project Sections */}
+          {project.sections && project.sections.length > 0 && (
+            <div className="project-details-sections" data-aos="fade-up">
+              <div className="project-details-sections-grid">
+                {project.sections.map((section, index) => (
+                  <div
+                    key={index}
+                    className="project-details-section-card"
+                    data-aos="fade-up"
+                    data-aos-delay={200 + index * 100}
+                  >
+                    <div className="project-details-section-image">
+                      <img
+                        src={section.image}
+                        alt={section.title}
+                        className="project-details-section-img"
+                      />
+                      {section.country && (
+                        <div className="project-details-section-country">
+                          <i className="fas fa-map-marker-alt"></i>
+                          {section.country}
+                        </div>
+                      )}
+                    </div>
+                    <div className="project-details-section-content">
+                      <h3 className="project-details-section-title">{section.title}</h3>
+                      <p className="project-details-section-description">{section.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+    </div>
   );
 };
 

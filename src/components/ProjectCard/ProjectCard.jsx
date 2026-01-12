@@ -6,14 +6,18 @@ const ProjectCard = ({ project, category }) => {
   const { project: projectData } = project;
   const firstSection = project.sections?.[0];
 
-  // Get category color
+  // Get category color using CSS custom properties
   const getCategoryColor = (category) => {
     const colors = {
-      'Infrastructure': '#3b82f6',
-      'Commercial': '#8b5cf6',
-      'Residential': '#10b981'
+      'Infrastructure': 'var(--primary)',
+      'Commercial': 'var(--secondary)',
+      'Residential': '#059669',
+      'Medical': '#dc2626',
+      'Hotels': '#7c3aed',
+      'Educational': '#0891b2',
+      'Industrial': '#ea580c'
     };
-    return colors[category] || '#6b7280';
+    return colors[category] || 'var(--primary)';
   };
 
   return (

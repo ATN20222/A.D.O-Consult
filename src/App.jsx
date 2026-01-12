@@ -1,7 +1,10 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Navigation from './components/Nav/Nav.jsx'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
 import Home from './pages/Home/Home.jsx'
 import About from './pages/About/About.jsx'
 import Projects from './pages/Projects/Projects.jsx'
@@ -10,8 +13,17 @@ import ProjectDetails from './pages/ProjectDetails/ProjectDetails.jsx'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+      offset: 100
+    });
+  }, []);
+
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navigation />
 

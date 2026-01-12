@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
 import ProjectCard from '../../components/ProjectCard/ProjectCard.jsx';
 import { Link } from 'react-router-dom';
+import './Projects.css';
 
 const Projects = () => {
   const [projectsData, setProjectsData] = useState({});
@@ -29,79 +29,99 @@ const Projects = () => {
 
   if (loading) {
     return (
-      <Container className="py-5 text-center">
-        <div className="spinner-border text-primary" role="status">
-          <span className="visually-hidden">Loading...</span>
+      <div className="projects-page">
+        <div className="projects-container">
+          <div className="projects-loading-section">
+            <div className="projects-loading-spinner">
+              <div className="projects-spinner"></div>
+            </div>
+            <h3>Loading Projects...</h3>
+            <p>Fetching our portfolio of engineering excellence</p>
+          </div>
         </div>
-        <p className="mt-3">Loading projects...</p>
-      </Container>
+      </div>
     );
   }
 
   if (error) {
     return (
-      <Container className="py-5 text-center">
-        <div className="alert alert-danger">
-          <h4>Error Loading Projects</h4>
-          <p>{error}</p>
+      <div className="projects-page">
+        <div className="projects-container">
+          <div className="projects-error-section">
+            <div className="projects-error-icon">
+              <i className="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3>Error Loading Projects</h3>
+            <p>{error}</p>
+            <button className="projects-retry-btn" onClick={() => window.location.reload()}>
+              Try Again
+            </button>
+          </div>
         </div>
-      </Container>
+      </div>
     );
   }
 
   return (
-    <Container className="py-5 page-margin">
-      <Row className="mb-5">
-        <Col className="text-center">
-          <h1 className="display-4 fw-bold text-primary mb-4">Our Projects</h1>
-          <p className="lead text-muted">
-            Explore our portfolio of successful engineering projects across various sectors
-          </p>
-        </Col>
-      </Row>
+    <div className="projects-page">
+      {/* Hero Section */}
+      <section className="projects-hero" data-aos="fade">
+        <div className="projects-hero-overlay">
+          <div className="projects-hero-content">
+            <h1 className="projects-hero-title" data-aos="fade-up" data-aos-delay="200">
+              Our <span className="projects-brand-highlight">Projects</span>
+            </h1>
+            <p className="projects-hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+              Explore our portfolio of successful engineering projects across various sectors and disciplines
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {Object.entries(projectsData).map(([category, projects]) => (
-        <div key={category} className="mb-5">
-          {/* Category Title */}
-          <Row className="mb-5">
-            <Col>
-              <div className="category-header">
+      {/* Projects Content */}
+      <section className="projects-content">
+        <div className="projects-container">
+          {Object.entries(projectsData).map(([category, projects], categoryIndex) => (
+            <div key={category} className="projects-category" data-aos="fade-up">
+              {/* Category Header */}
+              <div className="category-header" data-aos="fade-up" data-aos-delay="200">
                 <h2 className="category-title">{category} Projects</h2>
                 <div className="category-decoration"></div>
               </div>
-            </Col>
-          </Row>
 
-          {/* Projects Grid */}
-          <Row className="g-4">
-            {projects.map((item, index) => (
-              <Col lg={4} md={6} key={item.project.id}>
-                <ProjectCard
-                  project={item}
-                  category={category}
-                />
-              </Col>
-            ))}
-          </Row>
-        </div>
-      ))}
+              {/* Projects Grid */}
+              <div className="projects-grid">
+                {projects.map((item, index) => (
+                  <div
+                    key={item.project.id}
+                    className="project-item"
+                    data-aos="fade-up"
+                    data-aos-delay={300 + index * 100}
+                  >
+                    <ProjectCard
+                      project={item}
+                      category={category}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
 
-      {/* Call to Action */}
-      <Row className="mt-5">
-        <Col className="text-center">
-          <div className="cta-section text-center">
-            <h3 className="cta-title">Ready to Start Your Project?</h3>
-            <p className="cta-description">
-              Contact us today to discuss your engineering needs and how we can bring your vision to life.
-            </p>
-            <Button as={Link} to="/contact" variant="primary" size="lg" className="cta-button">
-              <i className="fas fa-envelope me-2"></i>
-              Get In Touch
-            </Button>
+          {/* Call to Action */}
+          <div className="projects-cta" data-aos="fade-up">
+            <div className="projects-cta-content">
+              <h2>Ready to Start Your Project?</h2>
+              <p>Contact us today to discuss your engineering needs and how we can bring your vision to life</p>
+              <Link to="/contact" className="cta-button">
+                Get In Touch
+                <span className="projects-btn-arrow">→</span>
+              </Link>
+            </div>
           </div>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </section>
+    </div>
   );
 };
 
