@@ -20,23 +20,22 @@ const ServicesSection = () => {
       category: 'Electrical Systems',
       icon: 'fas fa-bolt',
       items: [
-        'Medium Voltage Cables & Switchgear',
-        'Distribution Transformers & Boards (MDB/SDB)',
-        'Low Voltage Cables & Lighting Systems',
-        'Air Conditioning & Pump Feeding Systems',
-        'Emergency, UPS, Power Factor, and ETAP Studies',
-        'Earthing & Lightning Network Design'
+        "M.V Network & Bulk Equipment",
+        "L.V Network (LTG, PWR & Mech Power)",
+        "ELV System (FA, EV, PA, AV, Security & IP System)",
+        "ICT (FTTH), Master Clock, Queueing & Nurse call",
+        "L.V, ELV Study, Panel Schedule & SLD"
       ]
     },
     {
-      category: 'Light Current Systems (ELV)',
+      category: 'Mechanical Systems',
       icon: 'fas fa-wifi',
       items: [
-        'Fire Alarm, PA, CCTV, Access Control',
-        'IPTV/MATV, Smart Systems',
-        'FTTH, Triple Play, Master Clock',
-        'Nurse Call Systems',
-        'BOQs, Specifications, SLDs'
+        "HVAC System (Ventilation & Air Conditioning)",
+        "Fire Fighting System",
+        "Plumbing System (Water Supply System & Drainage System)",
+        "Swimming Pool System & Water Feature",
+        "Gas System (Medical / Natural Gas)"
       ]
     },
     {
@@ -44,6 +43,7 @@ const ServicesSection = () => {
       icon: 'fas fa-cogs',
       items: [
         'BMS & Smart Building Systems',
+        'Medical Gases System & Apeamatic System',
         'HVAC, Electrical Panels Monitoring',
         'Fire Alarm, Access Control Monitoring',
         'Elevator/Escalator Interface',
@@ -51,7 +51,7 @@ const ServicesSection = () => {
       ]
     },
     {
-      category: 'Infrastructure & Plumbing',
+      category: 'Infrastructure',
       icon: 'fas fa-water',
       items: [
         'Water, Sewage, Stormwater Networks',
@@ -59,7 +59,9 @@ const ServicesSection = () => {
         'Tanks, Reservoirs & Treatment Plants',
         'MV & LV Electrical Networks',
         'Street Lighting & Fiber Optic',
-        'SCADA & Traffic Management'
+        'SCADA & Traffic Management',
+        "M.V , L.V Network & Street Lighting",
+        "Fiber Optic Backbone Network (OSP / ISP) & Security System"
       ]
     }
   ];

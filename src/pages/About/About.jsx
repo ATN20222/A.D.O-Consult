@@ -1,19 +1,20 @@
 import React from 'react';
 import './About.css';
-
+import DrImage from '../../assets/DrAbdelmonem.png'
+import EngImage from '../../assets/EngEzat.png'
 const About = () => {
   const leadership = [
     {
-      name: 'Eng. Karim El-Sayed',
-      title: 'Managing Partner – Structural & Infrastructure Engineering',
-      description: 'Karim leads the firm\'s technical direction with over a decade of experience in structural design, infrastructure projects, and construction supervision. His expertise lies in delivering safe, optimized, and regulation-compliant solutions for complex engineering challenges.',
-      image: '/placeholder-karim.jpg'
+      name: 'Dr. Abdelmonem Shaban',
+      title: 'Chairman of the Board of Directors – A.D.O CONSULT',
+      description: 'He holds a Master’s degree in Electrical Engineering awarded in 2015, and a PhD in Electrical Power Networks Planning awarded in 2020. He has authored numerous specialized references and books in the fields of electrical power distribution, lighting systems, power and low-current systems, and electrical power networks planning. He has also designed and supervised more than 150 projects in the field of electromechanical works.',
+      image: DrImage
     },
     {
-      name: 'Eng. Omar Hassan',
-      title: 'Associate Partner – MEP & Smart Systems',
-      description: 'Omar specializes in mechanical, electrical, and smart systems engineering. He oversees integrated MEP coordination, energy-efficient design, and technology-driven solutions, ensuring seamless performance across all building systems.',
-      image: '/placeholder-omar.jpg'
+      name: 'Eng. Ezat Moghazy',
+      title: 'Chairman of the Board of Directors – A.D.O CONSULT',
+      description: 'He holds a Bachelor’s degree in Electrical Engineering from Helwan University, awarded in 2008. He has extensive professional experience in the design and supervision of electromechanical works, having successfully designed and supervised more than 100 projects. In addition, he has overseen and monitored the execution of numerous residential, administrative, commercial, educational, and medical projects, ensuring effective coordination and compliance throughout all implementation stages.',
+      image: EngImage
     }
   ];
 
@@ -142,10 +143,7 @@ const About = () => {
                 data-aos-delay={200 + index * 200}
               >
                 <div className="leader-image">
-                  <div className="image-placeholder">
-                    <i className="fas fa-user-tie"></i>
-                    <span>Photo Coming Soon</span>
-                  </div>
+                    <img src={leader.image} alt="leader image" />
                 </div>
 
                 <div className="leader-content">

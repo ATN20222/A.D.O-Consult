@@ -110,13 +110,14 @@ button:hover {
   margin-top: 100px;
 }
 .ALetter{
-  -webkit-text-fill-color: #233054 !important;
+  -webkit-text-fill-color: #b6232d !important;
+
 
 }
 .DLetter{
-  -webkit-text-fill-color: #b6232d !important;
+  -webkit-text-fill-color: #0413b8 !important;
 
 }
 .OLetter{
-  -webkit-text-fill-color: #233054 !important;
+  -webkit-text-fill-color: #b6232d !important;
 }

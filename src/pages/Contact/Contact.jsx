@@ -128,7 +128,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="01150357168"
                     />
                   </div>
 
@@ -196,8 +196,8 @@ const Contact = () => {
                   </div>
                   <div className="card-content">
                     <h3>Phone</h3>
-                    <p>+1 (555) 123-4567</p>
-                    <p>+1 (555) 123-4568</p>
+                    <p>01150357168</p>
+                    <p>01094469039</p>
                   </div>
                 </div>
 
@@ -207,8 +207,7 @@ const Contact = () => {
                   </div>
                   <div className="card-content">
                     <h3>Email</h3>
-                    <p>info@adoconsult.com</p>
-                    <p>projects@adoconsult.com</p>
+                    <p>info@ado-egy.com</p>
                   </div>
                 </div>
 
@@ -218,34 +217,49 @@ const Contact = () => {
                   </div>
                   <div className="card-content">
                     <h3>Address</h3>
-                    <p>123 Engineering Plaza</p>
-                    <p>Business District, City 12345</p>
-                    <p>United States</p>
+                    <p>Building 7881, Street 9, Mokattam, Cairo, Egypt</p>
                   </div>
                 </div>
 
                 <div className="contact-card" data-aos="fade-up" data-aos-delay="500">
                   <div className="card-icon">
-                    <i className="fas fa-clock"></i>
+                    <i className="fab fa-linkedin"></i>
                   </div>
                   <div className="card-content">
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM</p>
-                    <p>Sunday: Closed</p>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/company/110053973/admin?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BEWoOTkVAQBS9sZkrmf8ynQ%3D%3D" target="_blank" rel="noopener noreferrer" className="social-link">
+                      Follow us on LinkedIn
+                    </a>
                   </div>
                 </div>
+
+                <div className="contact-card" data-aos="fade-up" data-aos-delay="600">
+                  <div className="card-icon">
+                    <i className="fab fa-facebook"></i>
+                  </div>
+                  <div className="card-content">
+                    <h3>Facebook</h3>
+                    <a href="https://www.facebook.com/profile.php?id=61556208473080&locale=ar_AR" target="_blank" rel="noopener noreferrer" className="social-link">
+                      Follow us on Facebook
+                    </a>
+                  </div>
+                </div>
+
               </div>
 
-              {/* Map Placeholder */}
-              <div className="map-placeholder" data-aos="fade-up" data-aos-delay="600">
-                <div className="map-icon">
-                  <i className="fas fa-map-marked-alt"></i>
-                </div>
-                <div className="map-text">
-                  <h3>Visit Our Office</h3>
-                  <p>Located in the heart of the business district</p>
-                </div>
+              {/* Location Map */}
+              <div className="map-container" data-aos="fade-up" data-aos-delay="600">
+                <h3>Visit Our Office</h3>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3454.851616810669!2d31.3022689755524!3d30.012416774939766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDAwJzQ0LjciTiAzMcKwMTgnMTcuNCJF!5e0!3m2!1sen!2seg!4v1768335998145!5m2!1sen!2seg"
+                  width="100%"
+                  height="300"
+                  style={{border: 0}}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="A.D.O CONSULT Office Location"
+                ></iframe>
               </div>
             </div>
           </div>

@@ -74,7 +74,7 @@ const ContactSection = () => {
                 </div>
                 <div className="contact-text">
                   <h4>Phone</h4>
-                  <p>+1 (555) 123-4567</p>
+                  <p>01150357168</p>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ const ContactSection = () => {
                 </div>
                 <div className="contact-text">
                   <h4>Email</h4>
-                  <p>info@adoconsult.com</p>
+                  <p>info@ado-egy.com</p>
                 </div>
               </div>
 
@@ -94,7 +94,31 @@ const ContactSection = () => {
                 </div>
                 <div className="contact-text">
                   <h4>Address</h4>
-                  <p>123 Engineering Plaza<br />Business District, City 12345</p>
+                  <p>Building 7881, Street 9, Mokattam, Cairo, Egypt</p>
+                </div>
+              </div>
+
+              <div className="contact-item" data-aos="fade-up" data-aos-delay="500">
+                <div className="contact-icon">
+                  <i className="fab fa-linkedin"></i>
+                </div>
+                <div className="contact-text">
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/company/110053973/admin?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BEWoOTkVAQBS9sZkrmf8ynQ%3D%3D" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    Follow us on LinkedIn
+                  </a>
+                </div>
+              </div>
+
+              <div className="contact-item" data-aos="fade-up" data-aos-delay="600">
+                <div className="contact-icon">
+                  <i className="fab fa-facebook"></i>
+                </div>
+                <div className="contact-text">
+                  <h4>Facebook</h4>
+                  <a href="https://www.facebook.com/profile.php?id=61556208473080&locale=ar_AR" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    Follow us on Facebook
+                  </a>
                 </div>
               </div>
             </div>
@@ -144,7 +168,7 @@ const ContactSection = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="01150357168"
                   />
                 </div>
               </div>

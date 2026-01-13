@@ -19,7 +19,7 @@
 }
 .logo{
   transition: all 0.4s ease;
-  width: 100px;
+  width: 60px;
 }
 
 
@@ -174,7 +174,7 @@
 }
 @media (min-width:768px) {
   .logoScrolled{
-    width: 150px;
+    width: 100px;
   } 
 }
 @media (max-width:768px) {
