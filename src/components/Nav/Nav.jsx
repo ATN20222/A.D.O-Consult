@@ -38,7 +38,7 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="navbar-brand-modern">
-          <img src={logo} alt="logo" className='logo' width={!scrolled?'150px':'100px'}/>
+          <img src={logo} alt="logo" className={`logo ${!scrolled?'logoScrolled':''}`} />
         </Navbar.Brand>
 
         <Navbar.Toggle className="navbar-toggle-modern">
