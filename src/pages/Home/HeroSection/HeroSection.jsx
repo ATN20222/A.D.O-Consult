@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="hero-overlay">
         <div className="hero-content" data-aos="fade" data-aos-duration="1000">
           <h1 className="hero-title" data-aos="fade-down" data-aos-duration="1500">
-            A.D.O CONSULT
+            <span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT
           </h1>
           <p className="hero-paragraph" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
             Delivering world-class MEP engineering and consultancy solutions with precision and excellence.

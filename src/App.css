@@ -84,7 +84,7 @@
 }
 
 /* Legacy Vite Styles (for compatibility) */
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -97,7 +97,7 @@
 
 .logo.react:hover {
   filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.6));
-}
+} */
 
 @keyframes logo-spin {
   from {
@@ -232,7 +232,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   border-radius: 50px;
-  color: white;
+  color: white !important;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);

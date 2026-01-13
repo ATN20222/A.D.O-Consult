@@ -51,7 +51,7 @@ const About = () => {
         <div className="about-hero-overlay">
           <div className="about-hero-content">
             <h1 className="about-hero-title" data-aos="fade-up" data-aos-delay="200">
-              About <span className="about-brand-highlight">A.D.O CONSULT</span>
+              About <span className="about-brand-highlight"><span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT</span>
             </h1>
             <p className="about-hero-subtitle" data-aos="fade-up" data-aos-delay="400">
               Your Strategic Partner for Engineering Excellence

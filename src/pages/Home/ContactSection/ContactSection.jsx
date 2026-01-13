@@ -61,7 +61,7 @@ const ContactSection = () => {
                 Let's Work <span className="brand-highlight">Together</span>
               </h2>
               <p className="contact-description">
-                Contact A.D.O CONSULT today for professional MEP and consulting solutions
+                Contact <span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT today for professional MEP and consulting solutions
                 tailored to your project. Our experts are ready to provide guidance and
                 innovative engineering solutions.
               </p>

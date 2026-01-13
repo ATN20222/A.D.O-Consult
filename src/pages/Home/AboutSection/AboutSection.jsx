@@ -13,11 +13,11 @@ const AboutSection = () => {
         <div className="about-content">
           <div className="about-text" data-aos="fade-right">
             <h2 className="about-title">
-              About <span className="brand-highlight">A.D.O CONSULT</span>
+              About <span className="brand-highlight"><span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT</span>
             </h2>
             <div className="about-description">
               <p data-aos="fade-up" data-aos-delay="200">
-                A.D.O CONSULT is a specialized consultancy office providing consulting and MEP engineering services
+                <span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT is a specialized consultancy office providing consulting and MEP engineering services
                 following international standards. With extensive experience across medical, commercial, infrastructure,
                 educational, and residential projects, we ensure your project's mechanical, electrical, and plumbing
                 systems are designed and implemented with precision and excellence.

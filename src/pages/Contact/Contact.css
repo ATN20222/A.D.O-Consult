@@ -320,7 +320,7 @@
 }
 
 .contact-card {
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: linear-gradient(135deg, var(--bg-card) 100%);
   border-radius: 20px;
   padding: 2.5rem;
   box-shadow: var(--shadow-lg);
@@ -354,7 +354,7 @@
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   border-color: rgba(0, 51, 102, 0.3);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(0, 51, 102, 0.02) 100%);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(0, 51, 102, 0.02) 100%);
 }
 
 .card-icon {
@@ -429,7 +429,7 @@
 
 /* ================= MAP PLACEHOLDER ================= */
 .map-placeholder {
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(135deg, var(--bg-card) 100%);
   border-radius: 20px;
   padding: 3rem 2rem;
   text-align: center;
@@ -453,7 +453,7 @@
 
 .map-icon {
   font-size: 4.5rem;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

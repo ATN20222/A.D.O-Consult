@@ -26,12 +26,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 51, 102, 0.281) 0%,
-    rgba(220, 38, 38, 0.205) 50%,
-    rgba(0, 51, 102, 0.384) 100%
-  );
+  background: #0000004d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,11 +95,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(135deg,
-    rgba(220, 38, 38, 0.3),
-    rgba(0, 51, 102, 0.3),
-    rgba(220, 38, 38, 0.3)
-  );
+ 
   border-radius: 22px;
   z-index: -1;
   opacity: 0.7;

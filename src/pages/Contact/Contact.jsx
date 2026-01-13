@@ -59,7 +59,7 @@ const Contact = () => {
       <div className="contact-hero-overlay">
         <div className="contact-hero-content">
           <h1 className="contact-hero-title" data-aos="fade-up" data-aos-delay="200">
-            Contact <span className="contact-brand-highlight">A.D.O CONSULT</span>
+            Contact <span className="contact-brand-highlight"><span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT</span>
           </h1>
           <p className="contact-hero-subtitle" data-aos="fade-up" data-aos-delay="400">
               Ready to bring your MEP engineering vision to life? Let's discuss how our expertise
@@ -86,7 +86,7 @@ const Contact = () => {
                     <i className="fas fa-check-circle"></i>
                   </div>
                   <h3>Message Sent Successfully!</h3>
-                  <p>Thank you for contacting A.D.O CONSULT. We'll get back to you within 24 hours.</p>
+                  <p>Thank you for contacting <span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT. We'll get back to you within 24 hours.</p>
                 </div>
               )}
 
