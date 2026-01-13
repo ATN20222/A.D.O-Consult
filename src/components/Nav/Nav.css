@@ -177,3 +177,10 @@
     width: 150px;
   } 
 }
+@media (max-width:768px) {
+
+  .nav-item-modern{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

@@ -10,12 +10,21 @@ const Navigation = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 40);
+      setScrolled(window.scrollY > 40 || expanded);
     };
 
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [expanded]);
+
+  // Set scrolled to true if collapse/expanded is opened or window is scrolled
+  useEffect(() => {
+    if (expanded) {
+      setScrolled(true);
+    } else if (window.scrollY <= 40) {
+      setScrolled(false);
+    }
+  }, [expanded]);
 
   const navItems = [
     { path: '/', label: 'Home' },
@@ -38,7 +47,7 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="navbar-brand-modern">
-          <img src={logo} alt="logo" className={`logo ${!scrolled?'logoScrolled':''}`} />
+          <img src={logo} alt="logo" className={`logo ${!scrolled ? 'logoScrolled' : ''}`} />
         </Navbar.Brand>
 
         <Navbar.Toggle className="navbar-toggle-modern">

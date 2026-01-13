@@ -10,4 +10,8 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    host: true,      // allow local IP access
+    port: 5173
+  }
 })
