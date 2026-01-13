@@ -164,7 +164,7 @@
   border-radius: 8px;
   font-size: 1rem;
   color: var(--text-title);
-  background: white;
+  background: var(--bg-card);
   transition: all 0.3s ease;
   font-family: inherit;
 }
