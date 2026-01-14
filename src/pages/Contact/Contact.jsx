@@ -6,12 +6,12 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
-    projectType: '',
+    subject: '',
     message: ''
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: '', message: '' });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,23 +22,25 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      setSubmitSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        projectType: '',
-        message: ''
-      });
-      setIsSubmitting(false);
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 2000);
-  };
+    e.preventDefault()
+    if (submitting) return
+    setSubmitting(true)
+    setStatus({ type: '', message: '' })
+    try {
+      const resp = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, honeypot: '' })
+      })
+      if (!resp.ok) throw new Error('failed')
+      setStatus({ type: 'success', message: 'Thank you for your message! We will get back to you within 24 hours.' })
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+    } catch (err) {
+      setStatus({ type: 'error', message: 'Failed to send message. Please try again later.' })
+    } finally {
+      setSubmitting(false)
+    }
+  }
 
   const projectTypes = [
     'Medical Facility',
@@ -59,7 +61,7 @@ const Contact = () => {
       <div className="contact-hero-overlay">
         <div className="contact-hero-content">
           <h1 className="contact-hero-title" data-aos="fade-up" data-aos-delay="200">
-            Contact <span className="contact-brand-highlight"><span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT</span>
+            Contact <br /> <span className="contact-brand-highlight"><span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT</span>
           </h1>
           <p className="contact-hero-subtitle" data-aos="fade-up" data-aos-delay="400">
               Ready to bring your MEP engineering vision to life? Let's discuss how our expertise
@@ -80,13 +82,13 @@ const Contact = () => {
                 <p>Get in touch with our expert team</p>
               </div>
 
-              {submitSuccess && (
-                <div className="success-message" data-aos="fade-in">
-                  <div className="success-icon">
-                    <i className="fas fa-check-circle"></i>
+              {status.message && (
+                <div className={`form-status ${status.type}`} data-aos="fade-in">
+                  <div className="status-icon">
+                    <i className={status.type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'}></i>
                   </div>
-                  <h3>Message Sent Successfully!</h3>
-                  <p>Thank you for contacting <span className='ALetter'>A</span>.<span className="DLetter">D</span>.<span className="OLetter">O</span> CONSULT. We'll get back to you within 24 hours.</p>
+                  <h3>{status.type === 'success' ? 'Message Sent Successfully!' : 'Message Failed to Send'}</h3>
+                  <p>{status.message}</p>
                 </div>
               )}
 
@@ -132,21 +134,18 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="form-group">
-                    <label htmlFor="projectType">Project Type *</label>
-                    <select
-                      id="projectType"
-                      name="projectType"
-                      value={formData.projectType}
-                      onChange={handleInputChange}
-                      required
-                    >
-                      <option value="">Select project type</option>
-                      {projectTypes.map(type => (
-                        <option key={type} value={type}>{type}</option>
-                      ))}
-                    </select>
-                  </div>
+                <div className="form-group">
+                  <label htmlFor="subject">Subject *</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    required
+                    placeholder="Subject of your message"
+                  />
+                </div>
                 </div>
 
                 <div className="form-group">
@@ -165,9 +164,9 @@ const Contact = () => {
                 <button
                   type="submit"
                   className="submit-btn"
-                  disabled={isSubmitting}
+                  disabled={submitting}
                 >
-                  {isSubmitting ? (
+                  {submitting ? (
                     <>
                       <span className="spinner"></span>
                       Sending...

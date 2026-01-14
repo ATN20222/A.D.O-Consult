@@ -85,7 +85,7 @@ const About = () => {
           <div className="who-content" data-aos="fade-up" data-aos-delay="200">
             <div className="who-text">
               <p>
-                Founded by experienced engineers, our firm operates as a collaborative practice that brings together architecture, engineering, and smart infrastructure solutions under one roof. We are committed to international standards, clear communication, and results-driven engineering.
+              A.D.O CONSULT was established in 2019 by Dr. Abdel Moneim Shaaban as a specialized engineering office. Since then, it has evolved into a multidisciplinary firm providing integrated engineering services in accordance with the highest international standards.
               </p>
               <p>
                 Our strength lies in translating vision into buildable, cost-effective, and future-ready solutions.

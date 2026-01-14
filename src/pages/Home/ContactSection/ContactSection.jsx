@@ -6,11 +6,12 @@ const ContactSection = () => {
     name: '',
     email: '',
     phone: '',
-    projectType: '',
+    subject: '',
     message: ''
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: '', message: '' });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -21,22 +22,25 @@ const ContactSection = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      alert('Thank you for your message! We will get back to you soon.');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        projectType: '',
-        message: ''
-      });
-      setIsSubmitting(false);
-    }, 2000);
-  };
+    e.preventDefault()
+    if (submitting) return
+    setSubmitting(true)
+    setStatus({ type: '', message: '' })
+    try {
+      const resp = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, honeypot: '' })
+      })
+      if (!resp.ok) throw new Error('failed')
+      setStatus({ type: 'success', message: 'Thank you for your message! We will get back to you within 24 hours.' })
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+    } catch (err) {
+      setStatus({ type: 'error', message: 'Failed to send message. Please try again later.' })
+    } finally {
+      setSubmitting(false)
+    }
+  }
 
   const projectTypes = [
     'Medical Facility',
@@ -134,6 +138,15 @@ const ContactSection = () => {
                 <p>Get in touch with our team</p>
               </div>
 
+              {status.message && (
+                <div className={`form-status ${status.type}`} data-aos="fade-in">
+                  <div className="status-icon">
+                    <i className={status.type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'}></i>
+                  </div>
+                  <p className="status-message">{status.message}</p>
+                </div>
+              )}
+
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
                 <input
@@ -175,19 +188,16 @@ const ContactSection = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="projectType">Project Type *</label>
-                <select
-                  id="projectType"
-                  name="projectType"
-                  value={formData.projectType}
+                <label htmlFor="subject">Subject *</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
                   onChange={handleInputChange}
                   required
-                >
-                  <option value="">Select project type</option>
-                  {projectTypes.map(type => (
-                    <option key={type} value={type}>{type}</option>
-                  ))}
-                </select>
+                  placeholder="Subject of your message"
+                />
               </div>
 
               <div className="form-group">
@@ -206,9 +216,9 @@ const ContactSection = () => {
               <button
                 type="submit"
                 className="submit-btn"
-                disabled={isSubmitting}
+                disabled={submitting}
               >
-                {isSubmitting ? (
+                {submitting ? (
                   <>
                     <span className="spinner"></span>
                     Sending...

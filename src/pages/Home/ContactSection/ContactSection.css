@@ -207,6 +207,51 @@
   margin: 0;
 }
 
+/* ================= FORM STATUS ================= */
+.form-status {
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-status.success {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(34, 197, 94, 0.05));
+  border: 2px solid rgba(34, 197, 94, 0.3);
+}
+
+.form-status.error {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05));
+  border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.status-icon .fa-check-circle {
+  color: #22c55e;
+}
+
+.status-icon .fa-exclamation-circle {
+  color: #ef4444;
+}
+
+.status-message {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form-status.success .status-message {
+  color: #15803d;
+}
+
+.form-status.error .status-message {
+  color: #b91c1c;
+}
+
 .form-group {
   margin-bottom: 1.5rem;
 }
