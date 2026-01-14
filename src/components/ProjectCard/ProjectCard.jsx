@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProjectCard.css';
+import { ImagesBaseUrl } from '../../App';
 
 const ProjectCard = ({ project, category }) => {
   const { project: projectData } = project;
@@ -25,7 +26,7 @@ const ProjectCard = ({ project, category }) => {
       {/* Image Section */}
       <div className="project-card-image">
         <img
-          src={firstSection?.image || 'https://via.placeholder.com/400x250/1e293b/f8fafc?text=No+Image'}
+          src={ImagesBaseUrl+firstSection?.image || 'https://via.placeholder.com/400x250/1e293b/f8fafc?text=No+Image'}
           alt={projectData.title}
           className="project-image"
         />
@@ -51,25 +52,25 @@ const ProjectCard = ({ project, category }) => {
         </h3>
 
         <p className="project-card-description">
-          {projectData.description.length > 100
-            ? `${projectData.description.substring(0, 100)}...`
-            : projectData.description
+          {projectData?.description?.length > 100
+            ? `${projectData?.description.substring(0, 100)}...`
+            : projectData?.description
           }
         </p>
 
         {/* Project Meta */}
         <div className="project-card-meta">
-          {projectData.table && projectData.table.right.length >= 3 && (
+          {projectData?.table && projectData?.table?.right.length >= 3 && (
             <div className="meta-item">
               <i className="fas fa-calendar-alt"></i>
-              <span>{projectData.table.right[2]}</span>
+              <span>{projectData?.table.right[2]}</span>
             </div>
           )}
 
           {firstSection?.country && (
             <div className="meta-item">
               <i className="fas fa-map-marker-alt"></i>
-              <span>{firstSection.country}</span>
+              <span>{firstSection?.country}</span>
             </div>
           )}
         </div>

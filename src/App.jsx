@@ -11,7 +11,7 @@ import Projects from './pages/Projects/Projects.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 import ProjectDetails from './pages/ProjectDetails/ProjectDetails.jsx'
 import './App.css'
-
+export const ImagesBaseUrl = "https://ado-egy.com/images/";
 function App() {
   useEffect(() => {
     AOS.init({

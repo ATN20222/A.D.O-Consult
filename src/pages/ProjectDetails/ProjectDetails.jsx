@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './ProjectDetails.css';
+import { ImagesBaseUrl } from '../../App';
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -179,7 +180,7 @@ const ProjectDetails = () => {
                   >
                     <div className="project-details-section-image">
                       <img
-                        src={section.image}
+                        src={ImagesBaseUrl+section.image}
                         alt={section.title}
                         className="project-details-section-img"
                       />

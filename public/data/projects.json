@@ -1,28 +1,28 @@
 {
-  "Infrastructure": [
+  "MEDICAL": [
     {
       "project": {
         "id": 1,
-        "title": "Metropolitan Bridge Construction",
-        "description": "A major infrastructure project involving the design and construction of a 500-meter cable-stayed bridge connecting two metropolitan districts.",
+        "title": "Fayoum General Hospital – Fayoum Governorate",
+        "description": "Design and Supervision of Electromechanical Works and Preparation of Shop Drawings",
         "table": {
-          "left": ["Project Type", "Location", "Duration", "Budget"],
-          "right": ["Cable-Stayed Bridge", "Metropolitan Area", "36 Months", "$250M"]
+          "left": ["Project Area"],
+          "right": ["40000m²"]
         }
       },
       "sections": [
         {
-          "image": "https://via.placeholder.com/800x400/1d4ed8/FFFFFF?text=Bridge+Construction",
-          "title": "Bridge Construction Overview",
-          "country": "United States",
-          "description": "This project represents a significant advancement in urban infrastructure, connecting previously isolated districts and improving transportation efficiency.",
+          "image": "1.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
           "direction": "ltr"
         },
         {
-          "image": "https://via.placeholder.com/800x400/0891b2/FFFFFF?text=Engineering+Design",
-          "title": "Engineering Excellence",
-          "country": "United States",
-          "description": "Utilizing cutting-edge structural analysis and BIM technology to ensure the bridge meets all safety and performance standards.",
+          "image": "2.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
           "direction": "rtl"
         }
       ]
@@ -30,46 +30,467 @@
     {
       "project": {
         "id": 2,
-        "title": "Highway Expansion Project",
-        "description": "Expansion of a major highway corridor to accommodate increased traffic flow and improve regional connectivity.",
+        "title": "Al Nozha International Hospital – Fifth Settlement",
+        "description": "Design and Supervision of Electromechanical (MEP) Works",
         "table": {
-          "left": ["Project Type", "Location", "Duration", "Budget"],
-          "right": ["Highway Expansion", "Regional Corridor", "48 Months", "$180M"]
+          "left": ["Project Area"],
+          "right": ["16,000 m²"]
         }
       },
       "sections": [
         {
-          "image": "https://via.placeholder.com/800x400/059669/FFFFFF?text=Highway+Expansion",
-          "title": "Traffic Solutions",
-          "country": "United States",
-          "description": "Comprehensive highway expansion project designed to alleviate traffic congestion and improve transportation infrastructure.",
+          "image": "4.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
           "direction": "ltr"
+        },
+        {
+          "image": "5.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
         }
       ]
-    }
-  ],
-  "Commercial": [
+    },
     {
       "project": {
         "id": 3,
-        "title": "Corporate Headquarters",
-        "description": "Design and construction of a modern corporate headquarters featuring sustainable architecture and innovative workspace solutions.",
+        "title": "Dorra Al-Ashr Hospital – 10th of Ramadan City",
+        "description": "Design of Electromechanical (MEP) Works",
         "table": {
-          "left": ["Project Type", "Location", "Duration", "Budget"],
-          "right": ["Commercial Building", "Downtown District", "24 Months", "$120M"]
+          "left": ["Project Area"],
+          "right": ["11,000 m²"]
         }
       },
       "sections": [
         {
-          "image": "https://via.placeholder.com/800x400/7c3aed/FFFFFF?text=Corporate+HQ",
-          "title": "Modern Workspace",
-          "country": "United States",
-          "description": "State-of-the-art corporate headquarters combining functionality with aesthetic appeal and sustainable design principles.",
+          "image": "6.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
           "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 4,
+        "title": "Al-Suweidi Charity Hospital – Sharqia Governorate",
+        "description": "Design and Supervision of Electromechanical (MEP) Works",
+        "table": {
+          "left": ["Project Area", "Capacity"],
+          "right": ["7,000 m²", "80 Beds"]
+        }
+      },
+      "sections": [
+        {
+          "image": "7.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 5,
+        "title": "Matay Central Hospital – Minya Governorate",
+        "description": "Preparation of Shop Drawings",
+        "table": {
+          "left": ["Project Area"],
+          "right": ["20,000 m²"]
+        }
+      },
+      "sections": [
+        {
+          "image": "8.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "10.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 6,
+        "title": "Jadu General Hospital – Libya",
+        "description": "Design of Electromechanical (MEP) Works",
+        "table": {
+          "left": ["Project Area"],
+          "right": ["15,000 m²"]
+        }
+      },
+      "sections": [
+        {
+          "image": "9.jpeg",
+          "title": null,
+          "country": "Libya",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "13.jpeg",
+          "title": null,
+          "country": "Libya",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 7,
+        "title": "Eye Hospital – Tripoli, Libya",
+        "description": "Design and Supervision of Electromechanical Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "11.jpeg",
+          "title": null,
+          "country": "Libya",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "12.jpeg",
+          "title": null,
+          "country": "Libya",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 8,
+        "title": "Yafran Central Hospital – Yafran City, Libya",
+        "description": "Supervision of Electromechanical Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "14.jpeg",
+          "title": null,
+          "country": "Libya",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "15.jpeg",
+          "title": null,
+          "country": "Libya",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 10,
+        "title": "Specialized Care Hospital – Obour City, Cairo, Egypt",
+        "description": null,
+        "table": {
+          "left": ["Company", "Plot", "District", "Inside Plot", "Activity"],
+          "right": [
+            "Heliopolis Company",
+            "Plot (11)",
+            "District Eight",
+            "Inside Plot (6)",
+            "Medical Activity"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "image": "18.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "19.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    }
+    
+    
+  ],  
+  "Commercial": [
+    {
+      "project": {
+        "id": 11,
+        "title": "Al-Ghazi Mall – 6th of October City",
+        "description": "Design and Supervision of Electromechanical Works",
+        "table": {
+          "left": ["Project Area"],
+          "right": ["18,000 m²"]
+        }
+      },
+      "sections": [
+        {
+          "image": "20.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "22.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 12,
+        "title": "Kayan Mall – 6th of October City",
+        "description": "Electromechanical Works Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "21.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "25.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 13,
+        "title": "NO B U Restaurant – Ras El Hekma",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "23.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "24.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        },
+        {
+          "image": "26.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "27.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        },
+        {
+          "image": "28.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 14,
+        "title": "Crimson Restaurant – North Coast",
+        "description": "Electromechanical Desig",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "29.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "30.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 15,
+        "title": "MIVIDA Gallery – Fifth Settlement",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "31.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 16,
+        "title": "Mizar I Business Tower – ACUD",
+        "description": "Review and Design of Electromechanical Systems",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "32.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "33.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 17,
+        "title": "Arkan Palm – JP-12 Building",
+        "description": "Preparation of Engineering Drawings",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "34.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 18,
+        "title": "HEAVEN ONE – 6 OCTOBER",
+        "description": "Review and Design of Electromechanical Systems",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "35.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "36.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 19,
+        "title": "Arbella Mall",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "37.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "38.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
         }
       ]
     }
   ],
+    
   "Residential": [
     {
       "project": {
