@@ -27,15 +27,35 @@ const Contact = () => {
     setSubmitting(true)
     setStatus({ type: '', message: '' })
     try {
-      const resp = await fetch('/api/contact', {
+      // Call email service directly
+      const emailServiceUrl = import.meta.env.VITE_EMAIL_SERVICE_URL || 'http://localhost:3001'
+      const resp = await fetch(`${emailServiceUrl}/api/send-email`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, honeypot: '' })
+        body: JSON.stringify({
+          subject: `New Contact Form Submission: ${formData.subject}`,
+          message: formData.message,
+          from: formData.email,
+          name: formData.name,
+          phone: formData.phone,
+          fields: [
+            { label: 'Name', value: formData.name },
+            { label: 'Email', value: formData.email },
+            formData.phone && { label: 'Phone', value: formData.phone }
+          ].filter(Boolean)
+        })
       })
-      if (!resp.ok) throw new Error('failed')
+
+      if (!resp.ok) {
+        const errorData = await resp.json()
+        throw new Error(errorData.error || 'Failed to send email')
+      }
+
+      const result = await resp.json()
       setStatus({ type: 'success', message: 'Thank you for your message! We will get back to you within 24 hours.' })
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
     } catch (err) {
+      console.error('Contact form error:', err)
       setStatus({ type: 'error', message: 'Failed to send message. Please try again later.' })
     } finally {
       setSubmitting(false)
