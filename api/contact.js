@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     const html = generateEmailHTML({ name, email, phone, subject, message })
 
     await resend.emails.send({
-      from: 'A.D.O CONSULT <onboarding@resend.dev>',
+      from: 'A.D.O CONSULT <ado@resend.dev>',
       to: ['info@ado-egy.com','antonabdalla30@gmail.com'],
       subject: `New Contact Form Submission: ${subject}`,
       reply_to: email,
