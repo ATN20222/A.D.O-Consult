@@ -178,12 +178,15 @@ const ProjectDetails = () => {
                     data-aos="fade-up"
                     data-aos-delay={200 + index * 100}
                   >
-                    <div className="project-details-section-image">
-                      <img
-                        src={ImagesBaseUrl+section.image}
-                        alt={section.title}
-                        className="project-details-section-img"
-                      />
+                    <div className={`${(section?.title || section?.description)?"project-details-section-image":"project-details-section-image-full"}`}>
+                     
+                       <img
+                       src={ImagesBaseUrl + section.image}
+                       alt={section.title}
+                       className="project-details-section-img"
+                     />
+                    
+                     
                       {section.country && (
                         <div className="project-details-section-country">
                           <i className="fas fa-map-marker-alt"></i>
@@ -191,10 +194,13 @@ const ProjectDetails = () => {
                         </div>
                       )}
                     </div>
-                    <div className="project-details-section-content">
-                      <h3 className="project-details-section-title">{section.title}</h3>
-                      <p className="project-details-section-description">{section.description}</p>
-                    </div>
+                    {(section?.title || section?.description) &&
+                      <div className="project-details-section-content">
+                        <h3 className="project-details-section-title">{section.title}</h3>
+                        <p className="project-details-section-description">{section.description}</p>
+                      </div>
+                    }
+
                   </div>
                 ))}
               </div>

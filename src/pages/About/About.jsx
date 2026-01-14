@@ -13,7 +13,7 @@ const About = () => {
     {
       name: 'Eng. Ezat Moghazy',
       title: 'Chairman of the Board of Directors – A.D.O CONSULT',
-      description: 'He holds a Bachelor’s degree in Electrical Engineering from Helwan University, awarded in 2008. He has extensive professional experience in the design and supervision of electromechanical works, having successfully designed and supervised more than 100 projects. In addition, he has overseen and monitored the execution of numerous residential, administrative, commercial, educational, and medical projects, ensuring effective coordination and compliance throughout all implementation stages.',
+      description: "He holds a Bachelor's in Electrical Engineering from Helwan University (2008) and has extensive experience in designing and supervising electromechanical works. He has managed over 100 projects across residential, administrative, commercial, educational, and medical sectors, ensuring coordination and compliance throughout all implementation stages.",
       image: EngImage
     }
   ];

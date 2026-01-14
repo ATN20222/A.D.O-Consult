@@ -6,8 +6,12 @@
         "title": "Fayoum General Hospital – Fayoum Governorate",
         "description": "Design and Supervision of Electromechanical Works and Preparation of Shop Drawings",
         "table": {
-          "left": ["Project Area"],
-          "right": ["40000m²"]
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "40000m²"
+          ]
         }
       },
       "sections": [
@@ -33,8 +37,12 @@
         "title": "Al Nozha International Hospital – Fifth Settlement",
         "description": "Design and Supervision of Electromechanical (MEP) Works",
         "table": {
-          "left": ["Project Area"],
-          "right": ["16,000 m²"]
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "16,000 m²"
+          ]
         }
       },
       "sections": [
@@ -60,8 +68,12 @@
         "title": "Dorra Al-Ashr Hospital – 10th of Ramadan City",
         "description": "Design of Electromechanical (MEP) Works",
         "table": {
-          "left": ["Project Area"],
-          "right": ["11,000 m²"]
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "11,000 m²"
+          ]
         }
       },
       "sections": [
@@ -80,8 +92,14 @@
         "title": "Al-Suweidi Charity Hospital – Sharqia Governorate",
         "description": "Design and Supervision of Electromechanical (MEP) Works",
         "table": {
-          "left": ["Project Area", "Capacity"],
-          "right": ["7,000 m²", "80 Beds"]
+          "left": [
+            "Project Area",
+            "Capacity"
+          ],
+          "right": [
+            "7,000 m²",
+            "80 Beds"
+          ]
         }
       },
       "sections": [
@@ -100,8 +118,12 @@
         "title": "Matay Central Hospital – Minya Governorate",
         "description": "Preparation of Shop Drawings",
         "table": {
-          "left": ["Project Area"],
-          "right": ["20,000 m²"]
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "20,000 m²"
+          ]
         }
       },
       "sections": [
@@ -127,8 +149,12 @@
         "title": "Jadu General Hospital – Libya",
         "description": "Design of Electromechanical (MEP) Works",
         "table": {
-          "left": ["Project Area"],
-          "right": ["15,000 m²"]
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "15,000 m²"
+          ]
         }
       },
       "sections": [
@@ -208,7 +234,13 @@
         "title": "Specialized Care Hospital – Obour City, Cairo, Egypt",
         "description": null,
         "table": {
-          "left": ["Company", "Plot", "District", "Inside Plot", "Activity"],
+          "left": [
+            "Company",
+            "Plot",
+            "District",
+            "Inside Plot",
+            "Activity"
+          ],
           "right": [
             "Heliopolis Company",
             "Plot (11)",
@@ -235,18 +267,20 @@
         }
       ]
     }
-    
-    
-  ],  
-  "Commercial": [
+  ],
+  "COMMERCIAL": [
     {
       "project": {
         "id": 11,
         "title": "Al-Ghazi Mall – 6th of October City",
         "description": "Design and Supervision of Electromechanical Works",
         "table": {
-          "left": ["Project Area"],
-          "right": ["18,000 m²"]
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "18,000 m²"
+          ]
         }
       },
       "sections": [
@@ -490,27 +524,1038 @@
       ]
     }
   ],
-    
-  "Residential": [
+  "ADMINISTRATIVE": [
     {
       "project": {
-        "id": 4,
-        "title": "Luxury Residential Complex",
-        "description": "Development of a high-end residential complex featuring modern amenities and sustainable living spaces.",
+        "id": 20,
+        "title": "New Damietta Security Building – New Damietta",
+        "description": "Supervision and Design of Electromechanical Systems",
         "table": {
-          "left": ["Project Type", "Location", "Duration", "Budget"],
-          "right": ["Residential Complex", "Suburban Area", "30 Months", "$85M"]
+          "left": [],
+          "right": []
         }
       },
       "sections": [
         {
-          "image": "https://via.placeholder.com/800x400/d97706/FFFFFF?text=Luxury+Residence",
-          "title": "Premium Living",
-          "country": "United States",
-          "description": "Luxury residential development offering premium living spaces with modern amenities and sustainable features.",
+          "image": "39.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 21,
+        "title": "Administrative Building of Hassan Abdulaziz Contracting Company Headquarters",
+        "description": "Design and Supervision of Electromechanical Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "40.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "41.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 22,
+        "title": "Al-Maghrabi Group Headquarters – Fifth Settlement",
+        "description": "Supervision of Electromechanical Systems",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "42.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "44.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 23,
+        "title": "Administrative Building of Al-Naseej City – Sadat City",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "43.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 24,
+        "title": "Intelligence Administrative Building – Fayoum Branch",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "45.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "46.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 25,
+        "title": "Social Building – Insan Association, Kingdom of Saudi Arabia",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "47.jpeg",
+          "title": null,
+          "country": "Saudi Arabia",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "48.jpeg",
+          "title": null,
+          "country": "Saudi Arabia",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 26,
+        "title": "Military Complex – New Administrative Capital",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "49.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "50.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        },
+        {
+          "image": "51.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 27,
+        "title": "Dar Al-Iftaa – Mansoura Branch",
+        "description": "Design and Supervision of Electromechanical Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "52.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 28,
+        "title": "Al-Nas Hospital – Shubra El-Kheima",
+        "description": "Design and Supervision of Electromechanical Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "53.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "54.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
           "direction": "rtl"
         }
       ]
     }
+  ],
+  "INFRASTRUCTURAL": [
+    {
+      "project": {
+        "id": 29,
+        "title": "Utility Design for Container Terminal Activation – Terminal-0, NEOM, Kingdom of Saudi Arabia",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "450,000 m²"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "image": "55.jpeg",
+          "title": null,
+          "country": "Saudi Arabia",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 30,
+        "title": "Isola Sheraton Compound – 45 Feddan",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "56.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 31,
+        "title": "I City Camp – Mountain View",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "57.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "58.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 32,
+        "title": "City Valley – New Administrative Capital",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "62 Feddan"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "image": "59.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 33,
+        "title": "Access Road Development to the International Sports City – Sakheer, Bahrain",
+        "description": null,
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "60.jpeg",
+          "title": null,
+          "country": "Bahrain",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "62.jpeg",
+          "title": null,
+          "country": "Bahrain",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 34,
+        "title": "Land Planning and Subdivision Project – Plot 28B_1B, Green Belt, Sixth of October City",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [
+            "Project Area"
+          ],
+          "right": [
+            "2.5 Feddan"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "image": "61.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 35,
+        "title": "Pedestrian Bridge on Ahmed Taysir Street – Nasr City",
+        "description": "Design and Supervision of Electromechanical Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "63.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "64.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    }
+  ],
+  "RESIDENTIAL": [
+    {
+      "project": {
+        "id": 36,
+        "title": "Vinci Residences – New Administrative Capital, Egypt-Italy",
+        "description": "Electromechanical Design",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "66.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 37,
+        "title": "ZOYA (Sabbour Real Estate Investment) – North Coast, Alexandria",
+        "description": "Supervision of MEP (Mechanical, Electrical, and Plumbing) Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "65.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "101.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 38,
+        "title": "Mr. Moftah Abshina’s Villa – Libya",
+        "description": "Design and Supervision of MEP (Mechanical, Electrical, and Plumbing) Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "67.jpeg",
+          "title": null,
+          "country": "Libya",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 39,
+        "title": "Beit Al Watan Building – New Cairo, Fifth Settlement",
+        "description": "Design and Supervision of MEP",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "68.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "70.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 40,
+        "title": "Hada’iq Al-Asimah Buildings – New Administrative Capital",
+        "description": "Supervision and Design of MEP (Mechanical, Electrical, and Plumbing) Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "69.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "71.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 41,
+        "title": "Hurghada Marriott Hotel",
+        "description": "Auditing the Electricity Network",
+        "table": {
+          "left": [
+            "Location"
+          ],
+          "right": [
+            "Hurghada"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "image": "72.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 42,
+        "title": "Renaissance Golden View Sharm El Sheikh Hotel",
+        "description": "Auditing the Electricity Network",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "73.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 43,
+        "title": "Meridian Haram Hotel",
+        "description": "Auditing the Electricity Network",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "74.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    }
+  ],
+  "EDUCATION":[
+    {
+      "project": {
+        "id": 44,
+        "title": "Development of the Laboratories at the Faculty of Pharmacy – Helwan University",
+        "description": null,
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "75.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "76.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 45,
+        "title": "Gate Way International School",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "78.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 46,
+        "title": "The Russian Egyptian University – Faculty of Dentistry",
+        "description": "Supervision and Design of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "77.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "80.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 47,
+        "title": "Faculty of Medicine – Al-Riyada University",
+        "description": "Supervision and Design of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "79.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 48,
+        "title": "Faculty of Medicine – Helwan University",
+        "description": "Supervision and Design of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "81.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "82.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    }
+  ],
+  "INDUSTRIAL":[
+    {
+      "project": {
+        "id": 49,
+        "title": "Tatch El Zanouki Factory – 10th of Ramadan City",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": ["Project Area"],
+          "right": ["15,000 m²"]
+        }
+      },
+      "sections": [
+        {
+          "image": "83.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 50,
+        "title": "Froneri Ice Cream Factories",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "84.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 51,
+        "title": "Amazon Egypt – Amazon Stores",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": ["Branches"],
+          "right": ["Maadi – Cairo, Sidi Gaber – Alexandria Governorate"]
+        }
+      },
+      "sections": [
+        {
+          "image": "85.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "86.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 52,
+        "title": "Juhayna Factories – 6th of October City",
+        "description": "Supervision and Design of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "87.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 53,
+        "title": "Al-Ahram Poultry Factory – Km 62, Cairo-Alexandria Desert Road",
+        "description": "Supervision and Design of MEP Works",
+        "table": {
+          "left": ["Factory Location"],
+          "right": ["Feed Factory – Sadat City"]
+        }
+      },
+      "sections": [
+        {
+          "image": "88.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    }
+  ],
+  "SPORTS & SOCIAL":[
+    {
+      "project": {
+        "id": 54,
+        "title": "Swimming Pool – New Maadi Youth Center – Maadi",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "89.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 55,
+        "title": "National Training Center (Jeddah Branch) – Saudi Football Federation",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "90.jpeg",
+          "title": null,
+          "country": "Saudi Arabia",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "91.jpeg",
+          "title": null,
+          "country": "Saudi Arabia",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 56,
+        "title": "Dar Misr Club – Hada’iq October",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "92.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 57,
+        "title": "Construction of Football and Squash Courts – Ahmed Taysir Street – Nasr City",
+        "description": "Design of MEP",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "93.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    }
+  ],
+  "GAS STATION":[
+    {
+      "project": {
+        "id": 58,
+        "title": "Sheikh Zayed Fuel Station",
+        "description": "Design and Supervision of Electromechanical Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "94.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "96.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 59,
+        "title": "GARTEX Fuel Station – Ring Road",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "95.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    }
+  ],
+  "Religious Buildings":[
+    {
+      "project": {
+        "id": 60,
+        "title": "Al-Sayyida Khadija bint Khuwailid Mosque – Kingdom of Saudi Arabia",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "97.jpeg",
+          "title": null,
+          "country": "Saudi Arabia",
+          "description": null,
+          "direction": "ltr"
+        },
+        {
+          "image": "98.jpeg",
+          "title": null,
+          "country": "Saudi Arabia",
+          "description": null,
+          "direction": "rtl"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 61,
+        "title": "Al-Aziz Mosque – Fifth Settlement",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "100.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    },
+    {
+      "project": {
+        "id": 62,
+        "title": "Al-Aziz Mosque – Fifth Settlement",
+        "description": "Design and Supervision of MEP Works",
+        "table": {
+          "left": [],
+          "right": []
+        }
+      },
+      "sections": [
+        {
+          "image": "99.jpeg",
+          "title": null,
+          "country": "Egypt",
+          "description": null,
+          "direction": "ltr"
+        }
+      ]
+    }
   ]
+    
+  
 }

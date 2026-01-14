@@ -225,6 +225,12 @@
   height: 250px;
   overflow: hidden;
 }
+.project-details-section-image-full{
+  position: relative;
+  height: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
 
 .project-details-section-img {
   width: 100%;
